@@ -152,7 +152,7 @@ public class BlockPlaceLogger {
             int internalDoubleType = Util.getBlockId(doubletype.name(), true);
 
             if (replacedType > 0 && Util.getType(replacedType) != Material.AIR && Util.getType(replacedType) != Material.CAVE_AIR) {
-                BlockStatement.insert(preparedStmt, batchCount, time, userId, wid, x, y, z, replacedType, replacedData, null, replaceBlockData, 0, 0);
+//                BlockStatement.insert(preparedStmt, batchCount, time, userId, wid, x, y, z, replacedType, replacedData, null, replaceBlockData, 0, 0);
             }
 
             BlockStatement.insert(preparedStmt, batchCount, time, userId, wid, x, y, z, internalType, data, meta, blockData, 1, 0);
